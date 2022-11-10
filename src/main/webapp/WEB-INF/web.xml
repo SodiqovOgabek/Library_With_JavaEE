@@ -13,17 +13,17 @@
   </error-page>
 
   <error-page>
-    <exception-type>com.company.library.exceptions.AuthenticationException</exception-type>
+    <exception-type>com.company.library_javaEE.exceptions.AuthenticationException</exception-type>
     <location>/401</location>
   </error-page>
   <error-page>
-    <exception-type>com.company.library.exceptions.InvalidInputException</exception-type>
+    <exception-type>com.company.library_javaEE.exceptions.InvalidInputException</exception-type>
     <location>/400</location>
   </error-page>
 
   <filter>
     <filter-name>auth-reg-filter</filter-name>
-    <filter-class>com.company.library.filters.auth.AuthRegisterFilter</filter-class>
+    <filter-class>com.company.library_javaEE.filters.auth.AuthRegisterFilter</filter-class>
   </filter>
   <filter-mapping>
     <filter-name>auth-reg-filter</filter-name>
@@ -32,7 +32,7 @@
 
   <filter>
     <filter-name>auth-login-filter</filter-name>
-    <filter-class>com.company.library.filters.auth.AuthLoginFilter</filter-class>
+    <filter-class>com.company.library_javaEE.filters.auth.AuthLoginFilter</filter-class>
   </filter>
   <filter-mapping>
     <filter-name>auth-login-filter</filter-name>
@@ -41,7 +41,7 @@
 
   <filter>
     <filter-name>book-approval-filter</filter-name>
-    <filter-class>com.company.library.filters.book.BookApprovalFilter</filter-class>
+    <filter-class>com.company.library_javaEE.filters.book.BookApprovalFilter</filter-class>
   </filter>
   <filter-mapping>
     <filter-name>book-approval-filter</filter-name>
@@ -50,7 +50,7 @@
 
   <filter>
     <filter-name>Global-Filter</filter-name>
-    <filter-class>com.company.library.filters.GlobalFilter</filter-class>
+    <filter-class>com.company.library_javaEE.filters.GlobalFilter</filter-class>
   </filter>
   <filter-mapping>
     <filter-name>Global-Filter</filter-name>
@@ -59,7 +59,7 @@
 
   <!--    <filter>-->
   <!--        <filter-name>book-upload-filter</filter-name>-->
-  <!--        <filter-class>com.company.library.filters.book.BookUploadFilter</filter-class>-->
+  <!--        <filter-class>com.company.library_javaEE.filters.book.BookUploadFilter</filter-class>-->
   <!--    </filter>-->
   <!--    <filter-mapping>-->
   <!--        <filter-name>book-upload-filter</filter-name>-->

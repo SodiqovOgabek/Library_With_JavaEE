@@ -4,12 +4,11 @@ import javax.servlet.ServletException;
 
 /**
  * @author "Sodiqov Ogabek"
- * @since 11/8/2022 12:17 AM (Tuesday)
+ * @since 11/9/2022 11:49 PM (Wednesday)
  * Library_JavaEE/IntelliJ IDEA
  */
-public class NotFoundException extends ServletException {
-
-    public NotFoundException(String message){
+public class InvalidInputException extends ServletException {
+    public InvalidInputException(String message){
         super(message);
     }
 }

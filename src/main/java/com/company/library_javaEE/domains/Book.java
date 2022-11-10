@@ -28,7 +28,7 @@ public class Book {
     private Genre genre;
     @Builder.Default
     @Enumerated(EnumType.STRING)
-    private BookStatus bookStatus = BookStatus.PENDING;
+    private BookStatus status = BookStatus.PENDING;
 
     @Enumerated(EnumType.STRING)
     private Language language;
@@ -37,7 +37,7 @@ public class Book {
     private Integer downloadCount=0;
 
     @OneToOne(fetch = FetchType.EAGER)
-    private Uploads uploads;
+    private Uploads cover;
 
     @OneToOne(fetch = FetchType.EAGER)
     private Uploads file;
